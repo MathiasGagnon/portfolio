@@ -1,33 +1,32 @@
 import styles from './SkillsStyles.module.css';
 import checkMarkIconDark from '../../assets/checkmark-dark.svg';
-import checkMarkIconLight from '../../assets/checkmark-light.svg';
 import SkillList from '../../common/SkillList';
-import { useTheme } from '../../common/ThemeContext';
 
 function Skills() {
-  const { theme } = useTheme();
-  const checkMarkIcon = theme === 'light' ? checkMarkIconLight : checkMarkIconDark;
+
+  const checkMarkIcon = checkMarkIconDark;
 
   return (
     <section id="skills" className={styles.container}>
       <h1 className="sectionTitle">Skills</h1>
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="HTML" />
-        <SkillList src={checkMarkIcon} skill="CSS" />
-        <SkillList src={checkMarkIcon} skill="JavaScript" />
-        <SkillList src={checkMarkIcon} skill="TypeScript" />
-        <SkillList src={checkMarkIcon} skill="Node" />
+        <SkillList src={checkMarkIcon} skill="Python" />
+        <SkillList src={checkMarkIcon} skill="Pandas" />
+        <SkillList src={checkMarkIcon} skill="Polars" />
+        <SkillList src={checkMarkIcon} skill="Tensorflow" />
+        <SkillList src={checkMarkIcon} skill="PyTorch" />
+        <SkillList src={checkMarkIcon} skill="Langchain" />
       </div>
       <hr />
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="React" />
-        <SkillList src={checkMarkIcon} skill="Angular" />
-        <SkillList src={checkMarkIcon} skill="Vue" />
-        <SkillList src={checkMarkIcon} skill="Tailwind CSS" />
+        <SkillList src={checkMarkIcon} skill="Power BI" />
+        <SkillList src={checkMarkIcon} skill="Power Automate" />
+        <SkillList src={checkMarkIcon} skill="Talend" />
+        <SkillList src={checkMarkIcon} skill="Git" />
       </div>
       <hr />
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="Redux" />
+        <SkillList src={checkMarkIcon} skill="Docker" />
         <SkillList src={checkMarkIcon} skill="Webpack" />
         <SkillList src={checkMarkIcon} skill="Git" />
         <SkillList src={checkMarkIcon} skill="Jest" />
