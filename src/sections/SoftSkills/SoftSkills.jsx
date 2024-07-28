@@ -1,14 +1,14 @@
-import styles from './SkillsStyles.module.css';
+import styles from './SoftSkillsStyles.module.css';
 import checkMarkIconDark from '../../assets/checkmark-dark.svg';
 import SkillList from '../../common/SkillList';
 
-function Skills() {
+function SoftSkills() {
 
   const checkMarkIcon = checkMarkIconDark;
 
   return (
-    <section id="skills" className={styles.container}>
-      <h1 className="sectionTitle">Skills</h1>
+    <section id="Softskills" className={styles.container}>
+      <h1 className="sectionTitle">Soft skills</h1>
       <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="Python" />
         <SkillList src={checkMarkIcon} skill="Pandas" />
@@ -47,4 +47,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default SoftSkills;
